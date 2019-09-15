@@ -6,3 +6,14 @@ I am going to write down some useful commands that I may forget because I am not
  ```powershell
   get-childitem -path .\*\* -recurse -filter *node_modules* | remove-item -force -recurse
  ```
+- On unix
+```bash
+rm -rf `find -name node_modules`
+```
+
+## Show specific extension files from a specifix
+ 
+- On unix
+```bash
+find **/public/ -name "*.html" -print
+```
