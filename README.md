@@ -3,6 +3,6 @@ I am going to write down some useful commands that I may forget because I am not
 
 ## Delete node_modules from any subfolders
  - On windows
- ```bash
+ ```powershell
   get-childitem -path .\*\* -recurse -filter *node_modules* | remove-item -force -recurse
  ```
